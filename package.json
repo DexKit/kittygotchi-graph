@@ -1,0 +1,21 @@
+{
+  "name": "kittygotchi-graph",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "prepare:matic": "mustache config/matic.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:mumbai": "mustache config/mumbai.json subgraph.template.yaml > subgraph.yaml",
+    "deploy:matic": "yarn prepare:matic && yarn deploy",
+    "deploy:mumbai": "yarn prepare:mumbai && yarn deploy",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ JoaoCampos89/kittygotchi",
+    "create-local": "graph create --node http://localhost:8020/ JoaoCampos89/kittygotchi",
+    "remove-local": "graph remove --node http://localhost:8020/ JoaoCampos89/kittygotchi",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 JoaoCampos89/kittygotchi"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.22.2",
+    "@graphprotocol/graph-ts": "0.22.1",
+    "mustache": "^4.2.0"
+  }
+}
