@@ -125,5 +125,7 @@ export function handleGotchiFeed(event: GotchiFeeded): void {
       token.run = run.value;
     }
     token.lastUpdated = event.params.at;
+    token.save();
   }
+ 
 }
