@@ -5,6 +5,7 @@ type Token @entity {
   attack: BigInt
   defense: BigInt
   run: BigInt
+  totalStrength: BigInt
   lastUpdated: BigInt
   transfers: [Transfer!]! @derivedFrom(field: "token")
   contract: Contract

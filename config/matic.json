@@ -1,4 +1,5 @@
 {
     "network": "matic",
-    "address": "0xEA88540adb1664999524d1a698cb84F6C922D2A1"
+    "address": "0xEA88540adb1664999524d1a698cb84F6C922D2A1",
+    "startBlock": 19971925
   }

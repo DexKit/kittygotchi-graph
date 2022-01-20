@@ -50,6 +50,7 @@ export function handleTransfer(event: TransferEvent): void {
     token.attack = BigInt.fromI32(0);
     token.defense =  BigInt.fromI32(0);
     token.run =  BigInt.fromI32(0);
+    token.totalStrength =  BigInt.fromI32(0);
     let uri = instance.try_tokenURI(event.params.tokenId);
     if (!uri.reverted) {
       token.uri = uri.value;
@@ -123,6 +124,12 @@ export function handleGotchiFeed(event: GotchiFeeded): void {
     let run = instance.try_getRunOf(id);
     if (!attack.reverted) {
       token.run = run.value;
+    }
+    if(token.run && token.defense && token.run){
+      const run = token.run as BigInt;
+      const attack = token.attack as BigInt;
+      const defense = token.defense as BigInt;
+      token.totalStrength = run.plus(attack).plus(defense);
     }
     token.lastUpdated = event.params.at;
     token.save();

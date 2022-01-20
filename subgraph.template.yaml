@@ -8,7 +8,7 @@ dataSources:
     source:
       address: '{{address}}'
       abi: KittyGotchi
-      startBlock: 19971925
+      startBlock: {{startBlock}}
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

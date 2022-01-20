@@ -1,4 +1,5 @@
 {
     "network": "mumbai",
-    "address": "0xbdd0C521aBb19fA863917e2C807f327957D239ff"
+    "address": "0xbdd0C521aBb19fA863917e2C807f327957D239ff",
+    "startBlock": 19971925
   }
