@@ -4,11 +4,11 @@ schema:
 dataSources:
   - kind: ethereum/contract
     name: KittyGotchi
-    network: matic
+    network: bsc
     source:
-      address: '0xEA88540adb1664999524d1a698cb84F6C922D2A1'
+      address: '0xf44112926506318e3Aace4381B2D76791D980Ac3'
       abi: KittyGotchi
-      startBlock: 19971925
+      startBlock: 14510487
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.5

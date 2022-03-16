@@ -13,6 +13,7 @@
     "deploy:graph": "graph deploy --node https://api.thegraph.com/deploy/ JoaoCampos89/kittygotchi",
     "deploy:graph:mumbai": "graph deploy --node https://api.thegraph.com/deploy/ JoaoCampos89/kittygotchimumbai",
     "deploy:graph:bsc": "graph deploy --node https://api.thegraph.com/deploy/ JoaoCampos89/kittygotchibsc",
+    "deploy:graph:eth": "graph deploy --node https://api.thegraph.com/deploy/ JoaoCampos89/kittygotchieth",
     "create-local": "graph create --node http://localhost:8020/ JoaoCampos89/kittygotchi",
     "remove-local": "graph remove --node http://localhost:8020/ JoaoCampos89/kittygotchi",
     "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 JoaoCampos89/kittygotchi"
